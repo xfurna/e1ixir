@@ -1,0 +1,16 @@
+{{ define "main" }}
+<!-- heading begins -->
+
+<div align="center" class="subject-head" data-text="{{ .Title }}"></div>
+
+<!-- heading ends -->
+
+<hr>
+
+<!-- content begins -->
+<div class="content">
+    <div class="meta-data">{{ .Params.metaData }}</div>
+    {{ .Content }}
+</div>
+<!-- content ends -->
+{{ end }}

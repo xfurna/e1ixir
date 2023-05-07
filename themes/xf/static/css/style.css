@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #120111;
+  /* animation: flicker2 7s linear 0.5s infinite forwards; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+hr{
+  box-shadow: inset 0px 0px 15px #8a00f1, 0px 0px 5px #ff0000, 0px 0px 10px #e400ff;
+}
+
+.e1ixir{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* align-content: center; */
+  overflow: hidden;
+}
+
+.heading {
+  font-family: 'Beth Ellen';
+  letter-spacing: 0vmin;
+  color: #b82bbd;
+  font-size: 12vmin;
+  padding-top: 9vmin;
+  font-weight: lighter;
+}
+
+.heading::before{
+  content: attr(data-text);
+  text-shadow: 0 0 1vmin #53025e,
+  0 0 1.5vmin #731b8d,
+  0 0 2vmin #5c1658,
+  0 0 3.5vmin #350032;
+  filter: brightness(2); 
+  animation: flicker 10s linear 0.5s infinite forwards;
+}
+
+.nav-container{
+  top: 0;
+  display: block;
+  position: fixed;
+  z-index: 100;
+  margin: 10px;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 2.5vmin;
+  border-color: #120111;
+  /* backdrop-filter: blur(100px); */
+  background-color: #120111;
+  box-shadow: 0 1.5vmin 4vmin #120111;
+}
+
+.navbar .page{
+  font-family: 'Beth Ellen', cursive;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 7vmin;
+  padding-bottom: 10px;
+  color: #653a69;
+  text-shadow: 0 0px 2vmin #794672,
+  0 0px 2vmin #794672;
+  filter: brightness(1.5); 
+  letter-spacing: -1px;
+  font-size: 3vmin;
+  transition: all .5s ease-in-out;
+}
+
+.navbar .active{
+color: #c163e6 !important;
+text-shadow: 0 0 2vmin #ffffff, 
+0 0 1.5vmin #ffffff,
+0 0 2vmin #ffffff,
+0 0 2.5vmin #ffffff !important;
+filter: brightness(7) !important; 
+}
+
+.navbar .page:hover{
+color: #731db9;
+text-shadow: 0 0px 2vmin #8816aa,
+0 0 1vmin #8816aa,
+0 0 2vmin #8816aa;
+filter: brightness(7); 
+transition: 0.5s ease-in;
+}
+
+.navbar .xf-page{
+  font-family: 'Beth Ellen', cursive;
+}
+
+.xf{
+    top: 0%;
+    right: 50%;
+    bottom: 0%;
+    left: 50%;
+    position: fixed;
+    font-family: 'Beth Ellen', cursive;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20vmin;
+    color: #b82bbd;
+}
+  
+.xf::before{
+  position: absolute;
+  content: attr(data-text);
+  text-shadow: 0 0 1vmin #53025e,
+  0 0 3vmin #731b8d,
+  0 0 4vmin #5c1658,
+  0 0 5vmin #350032;
+  filter: blur(0.1vmin) brightness(2); 
+  animation: flicker 10s linear 0.5s infinite forwards;
+}
+
+.glow {
+  text-shadow: 0 0 2px #ff00f2,
+  0 0 10px #ff00f2,
+  0 0 10px #ff00f2;
+  filter: brightness(2);
+}
+
+.subject-head {
+  font-family: 'Fondamento', cursive;
+  font-weight: 600;
+  color: #ff91ec;
+  letter-spacing: 1vmin;
+  font-size: 10vmin;
+  padding-top: 10vmin;
+}
+
+.subject-head::before{
+  content: attr(data-text);
+  text-shadow: 0 0 1vmin #53025e,
+  0 0 1.5vmin #731b8d,
+  0 0 2vmin #5c1658,
+  0 0 3.5vmin #350032;
+}
+.content {
+    margin: 4vmin;
+    max-width: 100vmin;
+    display: block;
+    text-align: justify;
+    margin-bottom: -1.2vmin;
+}
+
+.content p {
+  color: #ffffffb5;
+  font-family: 'Recursive', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.content p a{
+  color: #ff6dd1;
+  text-decoration: none;
+  text-shadow: 0 0 15px #ff7979, 0 0 25px #ff34d5;
+}
+
+.content p a:hover {
+  color: #ffffffc5;
+  filter: brightness(3);  
+}
+
+.content strong {
+  text-shadow: 0 0 2px #ff00f2,
+  0 0 10px #ff00f2,
+  0 0 10px #ff00f2;
+  filter: brightness(2);
+}
+
+.content blockquote{
+  border-radius: 430px 310px 525px 190px/95px 225px 115px 155px;
+  box-shadow: inset 0 0 5.5vmin #000, 0 0 3.5vmin #000;
+
+  margin: 2vh;
+  padding: 10px 25px;
+  background-color: #49165c70;
+  position: relative;
+  font-size: 1.66rem;
+  border-radius: 1em;
+
+  content: attr(data-text);
+}
+
+.subject a, .subject {
+  font-family: 'Fondamento', cursive;
+  font-weight: 600;
+  color: #ff91ec;
+  font-size: 4vmin;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+
+.subject a:hover {
+  color: #9a66bd;
+  text-shadow: 0 0 15px #ff7979, 0 0 25px #ff34d5;
+  filter: brightness(2);  
+  transition: 0.2s ease-in;
+}
+
+.meta-data {
+  font-family: 'Recursive', sans-serif;
+  font-weight: 100;
+  color: #914384;
+  padding-bottom: 9px;
+  font-size: 18px;
+}
+
+.pages {
+  margin: 4vmin;
+  max-width: 100vmin;
+  display: block;
+  text-align: justify;
+  margin-bottom: 1.5vh;
+}
+
+.overview {
+  color: #ffffffb5;
+  font-family: 'Recursive', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+p a{
+  font-size: 15px;
+  color: #ff6dd1;
+  text-decoration: none;
+  text-shadow: 0 0 15px #ff7979, 0 0 5px #ff34d5;
+}
+
+p a:hover {
+  color: #ffffffc5;
+  filter: brightness(3);  
+}
+
+@media only screen and (max-width: 624px){
+    .navbar .page{
+      padding: 0vmin 6vmin;
+      padding-bottom: 7px;
+      color: #653a69;
+      text-shadow: 0 0px 1.5vmin #794672,
+      0 0px 2vmin #794672;
+      filter: brightness(1.5); 
+      letter-spacing: -0.5px;
+      font-size: 4.5vmin;
+    }
+    
+    .navbar .active{
+      text-shadow: 0 0px 3.5vmin #ffffff,
+      0 0 4vmin #ffffff,
+      0 0 4.5vmin #ffffff,
+      0 0 5.5vmin #ffffff;
+      filter: brightness(5); 
+    }
+  }
+
+  /******************************/
+.buttons svg{
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  filter: drop-shadow(0px 0px 3px #fff);
+  transition: all 0.3s ease-in;
+}
+
+.buttons {
+  padding: 15px;
+  margin: 0 2.5vmin;
+
+}
+
+#project-icon-bar a {
+  text-decoration: none;
+  font-family: 'Recursive', sans-serif;
+  font-size: 17px;
+  color: #e9c6e4;
+  text-shadow: 0 0 20px #ffffff,
+  0 0 30px #ffffff;
+}
+
+.buttons::after {
+  /* display: block; */
+  content: attr(content);
+  padding-top: 15px;
+  /* transition: all 0.3s ease-in; */
+}
+  /******************************/
+
+  @keyframes flicker{
+    0%{filter: brightness(1);} 
+    3%{filter: brightness(2);} 
+    6%{filter: brightness(1);} 
+    9%{filter: brightness(2);} 
+    10%{filter: brightness(3);} 
+    20%{filter: brightness(2);} 
+    30%{filter: brightness(1);} 
+    40%{filter: brightness(2);} 
+    50%{filter: brightness(3);} 
+    60%{filter: brightness(1);} 
+    90%{filter: brightness(2);} 
+    100%{filter: brightness(3);} 
+  } 
+/* 
+  @keyframes flicker{
+    0%{filter: blur(0.1vmin) brightness(1);} 
+    3%{filter: blur(0.1vmin) brightness(2);} 
+    6%{filter: blur(0.1vmin) brightness(1);} 
+    9%{filter: blur(0.1vmin) brightness(2);} 
+    10%{filter: blur(0px) brightness(3);} 
+    20%{filter: blur(0.1vmin) brightness(2);} 
+    30%{filter: blur(0.1vmin) brightness(1);} 
+    40%{filter: blur(0.1vmin) brightness(2);} 
+    50%{filter: blur(0px) brightness(3);} 
+    60%{filter: blur(0.1vmin) brightness(1);} 
+    90%{filter: blur(0.1vmin) brightness(2);} 
+    100%{filter: blur(0px) brightness(4);} 
+  }  */

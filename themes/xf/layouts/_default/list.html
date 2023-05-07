@@ -1,0 +1,38 @@
+{{ define "main" }} 
+<!-- heading begins -->
+  {{ if eq .Title "e1ixir" }}
+
+    <div align="center" style="font-family: 'Amita', cursive;" class="heading" data-text="` क `"></div>
+
+  {{ else }}
+
+    <div align="center" class="heading" data-text="{{ .Title }}"></div>
+
+  {{ end }}
+<!-- heading ends -->
+
+<hr>
+
+<!-- listing begins -->
+  {{ range .Pages }}
+  <div class="pages">
+      <div class="subject"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+      <div class="meta-data">{{ .Params.metaData }}</div>
+      <div class="overview">{{ .Params.overview }}</div>
+      <p align="right" class="overview"><a href="{{ .Permalink }}"><b>read ></b></a></p>
+      <hr>
+  </div>
+  
+  {{ end }}
+
+<!-- listing ends -->
+
+<!-- section kha begins -->
+  {{ if eq .Title "e1ixir" }}
+
+    <div align="center" style="font-family: 'Amita', cursive;" class="heading" data-text="` ख `"></div>
+
+  {{ end }}
+<!-- section kha ends -->
+
+{{ end }}

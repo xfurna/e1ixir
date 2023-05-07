@@ -1,0 +1,7 @@
+baseURL = "/"
+languageCode = "en-us"
+pluralizelisttitles = "false"
+titleCaseStyle = "chicago"
+title = "e1ixir"
+publishDir = "docs"
+theme = "xf"
