@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>e1ixir</title>
+    <link>/</link>
+    <description>Recent content on e1ixir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Os hai bhai</title>
+      <link>/testpost1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/testpost1/</guid>
+      <description>Heading 1 some text
+heading 2 some more test. italics some moretext here. bold text and some more random text.
+ quote text quote textquote text quote textquote text quote textquote text quote textquote text quote textquote text quote textquote text quote textquote text quote textquote text g
+ quote text quote textquote text quote textquote text quote textquote text quote textquote text g quote text quote textquote text quote textquote text quote textquote text quote textquote text g quote text quote textquote text quote textquote text quote textquote text quote textquote text g</description>
+    </item>
+    
+  </channel>
+</rss>

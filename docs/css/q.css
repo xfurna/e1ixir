@@ -1,0 +1,32 @@
+@media only screen and (max-width: 625px){
+    .navbar .page{
+      padding: 0vmin 6vmin;
+      padding-bottom: 7px;
+      color: #653a69;
+      text-shadow: 0 0px 1.5vmin #794672,
+      0 0px 2vmin #794672;
+      filter: brightness(1.5); 
+      letter-spacing: -0.5px;
+      font-size: 4.5vmin;
+    }
+    
+    .navbar .active{
+      text-shadow: 0 0px 3.5vmin #ffffff, 
+      0 0 4vmin #ffffff,
+      0 0 4.5vmin #ffffff,
+      0 0 5.5vmin #ffffff; 
+      filter: brightness(5); 
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 20px
+    }
+  }
