@@ -1,53 +1,61 @@
-{{ define "main" }} 
+{{ define "main" }}
 <!-- heading begins -->
-  {{ if eq .Title "e1ixir" }}
+{{ if eq .Title "e1ixir" }}
 
-    <div align="center" style="font-family: 'Amita', cursive;" class="heading" data-text="` क `"></div>
+<div
+  align="center"
+  style="font-family: 'Amita', cursive"
+  class="heading"
+  data-text="` क `">
+</div>
 
-  {{ else }}
+{{ else }}
 
-    <div align="center" class="heading" data-text="{{ .Title }}"></div>
+<div align="center" class="heading" data-text="{{ .Title }}"></div>
 
-  {{ end }}
+{{ end }}
 <!-- heading ends -->
 
-<hr>
+<hr />
 
 <!-- listing begins -->
-  {{ range .Pages }}
+{{ range .Pages }} {{ if not (in .Params.category "kha" ) }}
 
-  <div class="sect">
-      <div class="subject"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
-      <div class="meta-data">{{ .Params.metaData }}</div>
-      <div class="overview">{{ .Params.overview }}</div>
-      <p align="right" class="overview"><a href="{{ .Permalink }}"><b>read ></b></a></p>
-      <hr>
-  </div>
-  
-  {{ end }}
+<div class="sect">
+  <div class="subject"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+  <div class="meta-data">{{ .Params.metaData }}</div>
+  <div class="overview">{{ .Params.overview }}</div>
+  <p align="right" class="overview">
+    <a href="{{ .Permalink }}"><b>read ></b></a>
+  </p>
+  <hr />
+</div>
+
+{{ end }} {{ end }}
 
 <!-- listing ends -->
 
 <!-- section kha begins -->
-  {{ if eq .Title "e1ixir" }}
+{{ if eq .Title "e1ixir" }}
 
-    <div align="center" style="font-family: 'Amita', cursive;" class="heading" data-text="` ख `"></div>
+<div
+  align="center"
+  style="font-family: 'Amita', cursive"
+  class="heading"
+  data-text="` ख `">
+</div>
 
-    <div class="sect">
-      <h2>
-        <a href="google.com">
-       {{- partial "script.html" . -}}
+<div class="sect">
+  <h2>
+    <a href="google.com"> {{- partial "script.html" . -}} OccupyMars </a>
+  </h2>
 
-        OccupyMars</a>
-      </h2>
-      <h2>
-       {{- partial "script.html" . -}}
+  <h2>
+    <a href="google.com"> {{- partial "script.html" . -}} What the bleep </a>
+  </h2>
+</div>
 
-      What the bleep
-      </h2>
-  </div>
-
-  {{ end }}
+{{ end }}
 <!-- section kha ends -->
 
 {{ end }}

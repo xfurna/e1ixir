@@ -2,7 +2,7 @@
 title = "ytdydts bhai"
 overview = "kewal test  hijhfjf khi jki ojpohogoi;g ohoih and some more random text."
 metaData = "2 June, 2023"
-category = "trade"
+category = "kha"
 +++
 
 # Heading 1
