@@ -29,4 +29,8 @@
     .content p {
         font-size: 20px
     }
+
+    .subject, .subject a {
+      font-size: 22px;
+    }
   }

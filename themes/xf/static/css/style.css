@@ -167,7 +167,7 @@ transition: 0.5s ease-in;
     margin-bottom: -1.2vmin;
 }
 
-.content p {
+.content p, .content ul, .content ol {
   color: #ffffffb5;
   font-family: 'Recursive', sans-serif;
   font-size: 24px;
@@ -175,7 +175,7 @@ transition: 0.5s ease-in;
   letter-spacing: 1px;
 }
 
-.content p a{
+.content p a, ul a, ol a {
   color: #ff6dd1;
   text-decoration: none;
   text-shadow: 0 0 15px #ff7979, 0 0 25px #ff34d5;
@@ -191,6 +191,7 @@ transition: 0.5s ease-in;
   0 0 10px #ff00f2,
   0 0 10px #ff00f2;
   filter: brightness(2);
+  font-weight: normal;
 }
 
 .content blockquote{
@@ -227,7 +228,7 @@ transition: 0.5s ease-in;
   font-family: 'Recursive', sans-serif;
   font-weight: 100;
   color: #914384;
-  padding-bottom: 9px;
+  padding: 15px;
   font-size: 18px;
 }
 
@@ -247,14 +248,14 @@ transition: 0.5s ease-in;
   letter-spacing: 1px;
 }
 
-p a{
+p a, ul a, ol a {
   font-size: 15px;
   color: #ff6dd1;
   text-decoration: none;
   text-shadow: 0 0 15px #ff7979, 0 0 5px #ff34d5;
 }
 
-p a:hover {
+p a:hover, ul a:hover, ol a:hover {
   color: #ffffffc5;
   filter: brightness(3);  
 }
@@ -272,7 +273,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 590;
   font-size: 3vmin;
 }
 
@@ -328,3 +329,13 @@ h2 {
     90%{filter: blur(0.1vmin) brightness(2);} 
     100%{filter: blur(0px) brightness(4);} 
   }  */
+
+  /* ---------- */
+
+  pre {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color: #ffffffb5;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }

@@ -5,4 +5,5 @@
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css"> 
     <link rel="stylesheet" media="screen and (max-width:624px)" href="{{ .Site.BaseURL }}css/q.css"> 
+    {{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 </head>

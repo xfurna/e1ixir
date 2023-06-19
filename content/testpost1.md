@@ -3,11 +3,14 @@ title = "Os hai bhai"
 overview = "kewal test  hi some more test. *italics* some text here. **bold text** and some more random text."
 metaData = "2 June, 2023"
 category = "trade"
+math = true
 +++
 
 # Heading 1
 
-some text
+some text 
+
+$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
 
 ## heading 2
 some more test. *italics* some <div class="glow">more</div> text here. **bold text** and some more random text.
